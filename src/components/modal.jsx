@@ -1,7 +1,5 @@
-
-function Modal({closeModal, show, setShow}) {
+function Modal({closeModal, show}) {
     return <>
-        {/* <div id="myModal" className="modal fade show d-block" role="dialog"> */}
         <div id="myModal" className={`modal fade ${show === true ? 'show d-block' : 'd-none'}`} role="dialog">
             <div className="modal-dialog">
 

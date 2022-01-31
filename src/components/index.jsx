@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import Modal from "./modal";
 
 const ModalWindow = () => {
@@ -17,9 +17,8 @@ const ModalWindow = () => {
 
         </div>
 
-        <Modal openModal={openModal} closeModal={closeModal} show={show} setShow={setShow} />
+        <Modal closeModal={closeModal} show={show} />
     </>;
-  }
-  
-  export default ModalWindow;
-  
+}
+
+export default ModalWindow;
